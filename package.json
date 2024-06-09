@@ -1,0 +1,19 @@
+{
+  "name": "dashboard",
+  "version": "1.0.0",
+  "description": "Данные о задачах в красивом и удобном виде",
+  "main": "src/scripts/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "browserify src/scripts/index.js -o bundle.js",
+    "watch": "watchify src/scripts/index.js -o bundle.js"
+  },
+  "author": "Zhanna",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.21.1",
+    "chart.js": "^4.4.3",
+    "jquery": "^3.7.1",
+    "moment": "^2.30.1"
+  }
+}

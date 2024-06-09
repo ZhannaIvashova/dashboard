@@ -1,0 +1,92 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 1320px;
+  margin: 0 auto;
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.container-1 {
+  width: 76%;
+  display: grid;
+  grid-template-columns: 55% 35%;
+  gap: 10%;
+  margin-top: 16px;
+}
+
+.container-2 {
+  display: flex;
+  gap: 50px;
+  padding-bottom: 10px;
+}
+
+
+.tasks, .sports-activity, .steps {
+  padding: 26px;
+  border-radius: 50px;
+}
+
+.tasks, .sports-activity {
+  background-color: rgba(255, 240, 245, 0.4);
+}
+
+.steps {
+  width: 40%;
+  margin-top: 16px;
+  background-color: rgba(173, 255, 47, 0.1);
+}
+
+.today-date {
+  height: 100%;
+  margin-right: 160px;
+  border-radius: 50%;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  background-color: rgba(30, 144, 255, 0.4);
+}
+
+.today-date, .summary-steps__info {
+  text-align: center;
+  padding: 24px;
+}
+
+.today-date__title::first-letter {
+  text-transform: capitalize;
+  font-weight: bold;
+}
+
+.today-date__title{
+  font-size: 24px;
+}
+
+.summary-steps {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 50px;
+}
+
+.summary-steps__info {
+  align-self: flex-end;
+  border-radius: 50px;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  background-color: rgba(173, 255, 47, 0.1);
+}
+
+.img-step {
+  width: 100px;
+}
