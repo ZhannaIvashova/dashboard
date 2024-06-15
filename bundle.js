@@ -33380,18 +33380,12 @@ const $ = require('jquery');
 
 
 function displayInfo(maxNum=null, minNum=null) {
-    //const todayDate = $('.today-date__date');
-    //const summarySteps = $('.summary-steps__info');
-
-    //todayDate.html(`${moment().format('L')}<br>${moment().format('dddd')}<br>${moment().format('LT')}`);
-
     $('.today-date__date').html(`${moment().format('L')}<br>${moment().format('dddd')}<br>${moment().format('LT')}`);
 
     $('.summary-steps__info').html(`
                 Максимальное количество шагов: ${maxNum}<br>
                 Минимальное количество шагов: ${minNum}
                 `);
-
 }
 
 $(async function() {
